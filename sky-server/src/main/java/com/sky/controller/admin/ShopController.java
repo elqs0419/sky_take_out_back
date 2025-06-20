@@ -41,7 +41,7 @@ public class ShopController {
     @GetMapping("/status")
     public Result<Integer> getStatus(){
         Integer status = (Integer)redisTemplate.opsForValue().get(KEY);
-        log.info("获取营业状态为:{}",status == 1? "营业中" : "打烊中");
+        log.info("获取营业状态为:{}",status == 1? "来财" : "摆烂");
         return Result.success(status);
     }
 
