@@ -30,7 +30,7 @@ logging:
   level:
     com:
       sky:
-        mapper: info
+        mapper: debug
         service: info
         controller: info
 
