@@ -4,3 +4,5 @@
 *.class
 *Test.java
 **/test/
+D:\ccode\java_code\project-0519\sky-take-out\sky-server\src\main\resources\application-dev.yml
+**/main/resources/*.yml
