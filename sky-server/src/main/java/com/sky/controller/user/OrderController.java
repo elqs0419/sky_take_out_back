@@ -71,9 +71,20 @@ public class OrderController {
         return Result.success();
     }
 
+    /**
+     * 再来一单
+     * @param id
+     * @return
+     */
     @PostMapping("/repetition/{id}")
     public Result repetition(@PathVariable Long id){
         orderService.repetition(id);
+        return Result.success();
+    }
+
+    @GetMapping("/reminder/{id}")
+    public Result reminder(@PathVariable("id") Long id){
+        orderService.reminder(id);
         return Result.success();
     }
 }
